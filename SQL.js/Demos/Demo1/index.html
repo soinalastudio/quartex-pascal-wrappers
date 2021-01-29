@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+	<title>%apptitle%</title>
+  <script src="resizeobserver.polyfill.js" type="text/javascript" defer="true"></script>
+  <script src="sql-wasm.js" type="text/javascript" defer="true"></script>
+	<script src="index.js" type="text/javascript" defer="true"></script> 
+  <script>
+    function loadBinaryFile(path,success) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", path, true);
+        xhr.responseType = "arraybuffer";
+        xhr.onload = function() {
+            var data = new Uint8Array(xhr.response);
+            var arr = new Array();
+            for(var i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
+            success(arr.join(""));
+        };
+        xhr.send();
+    };
+  </script>
+</head>
+
+<body onload="main();">   
+</body>
+
+</html>
