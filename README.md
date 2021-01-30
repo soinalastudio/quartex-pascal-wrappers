@@ -1,2 +1,2 @@
 # quartex-pascal-wrappers
- Wrappers dedicated for Quartex Pascal
+ Wrappers dedicated to Quartex Pascal
