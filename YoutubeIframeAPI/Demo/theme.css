@@ -1,0 +1,942 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://use.fontawesome.com/releases/v5.0.7/css/all.css');
+
+:focus {
+	outline-width: 0;
+	outline-color: transparent;
+	outline-style: none
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+	font-family: "Ubuntu", verdana, Helvetica;
+	font-size: 11pt;
+}
+
+.TQTXDisplay {
+}
+
+.TQTXViewPort {
+}
+
+/* ############################################### */
+/* STANDARD FONT SIZES                             */
+/* ############################################### */
+
+.QTXFontSmall {
+	font-family: "Ubuntu", verdana, Helvetica;
+	font-name: "Ubuntu";
+	font-size: 12px;
+}
+
+.QTXFontNormal {
+	font-family: "Ubuntu", verdana, Helvetica;
+	font-name: "Ubuntu";
+	font-size: 14px;
+}
+
+.QTXFontMedium {
+	font-family: "Ubuntu", verdana, Helvetica;
+	font-name: "Ubuntu";
+	font-size: 18px;
+}
+
+.QTXFontLarge {
+	font-family: "Ubuntu", verdana, Helvetica;
+	font-name: "Ubuntu";
+	font-size: 24px;
+}
+
+/* ############################################### */
+/* STANDARD BACKGROUND TYPES                       */
+/* ############################################### */
+
+.QTXDisplayBackground {
+	background-color: #333
+}
+
+.QTXControlBackground {
+	background-color: #f8f8f8
+}
+
+.QTXContainerBackground {
+	background-color: #F5F2EF
+}
+
+.QTXEditBackground {
+	background-color: #FFF
+}
+
+.QTXListBackground {
+	background-color: #FFF
+}
+
+.QTXListItemBackground {
+	background-color: #FFF;
+}
+
+.QTXListItemSelectedBackground {
+	background-color: rgba(239, 239, 239, .9) !important;
+}
+
+.QTXButtonBackground {
+	background-color: #f8f8f8;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(100, #F0F0F0));
+	background-image: -webkit-linear-gradient(top, #FFF 0%, #F0F0F0 100%);
+	background-image: -moz-linear-gradient(top, #FFF 0%, #F0F0F0 100%);
+	background-image: -ms-linear-gradient(top, #FFF 0%, #F0F0F0 100%);
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F0F0F0', GradientType=0);
+	background-image: linear-gradient(to bottom, #FFF 0%, #F0F0F0 100%)
+}
+
+.QTXButtonBackground:active {
+	background-color: #ededed;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E7E7E7), color-stop(100, #FFFFFF));
+	background-image: -webkit-linear-gradient(top, #E7E7E7 0%, #FFF 100%);
+	background-image: -moz-linear-gradient(top, #E7E7E7 0%, #FFF 100%);
+	background-image: -ms-linear-gradient(top, #E7E7E7 0%, #FFF 100%);
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E7E7E7', endColorstr='#FFFFFF', GradientType=0);
+	background-image: linear-gradient(to bottom, #E7E7E7 0%, #FFF 100%)
+}
+
+.QTXDialogButtonBackground {
+	background-color: #f8f8f8;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E0E0E0), color-stop(100, #CCCCCC));
+	background-image: -webkit-linear-gradient(top, #E0E0E0 0%, #CCC 100%);
+	background-image: -moz-linear-gradient(top, #E0E0E0 0%, #CCC 100%);
+	background-image: -ms-linear-gradient(top, #E0E0E0 0%, #CCC 100%);
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E0E0E0', endColorstr='#CCCCCC', GradientType=0);
+	background-image: linear-gradient(to bottom, #E0E0E0 0%, #CCC 100%)
+}
+
+.QTXDialogButtonBackground:active {
+	background-color: #ededed;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #CCCCCC), color-stop(100, #E0E0E0));
+	background-image: -webkit-linear-gradient(top, #CCC 0%, #E0E0E0 100%);
+	background-image: -moz-linear-gradient(top, #CCC 0%, #E0E0E0 100%);
+	background-image: -ms-linear-gradient(top, #CCC 0%, #E0E0E0 100%);
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC', endColorstr='#E0E0E0', GradientType=0);
+	background-image: linear-gradient(to bottom, #CCC 0%, #E0E0E0 100%)
+}
+
+.QTXDecorativeBackground {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2B5897), color-stop(100, #5B88C7)) !important;
+	background-image: -webkit-linear-gradient(top, #2B5897 0%, #5B88C7 100%) !important;
+	background-image: -moz-linear-gradient(top, #2B5897 0%, #5B88C7 100%) !important;
+	background-image: -ms-linear-gradient(top, #2B5897 0%, #5B88C7 100%) !important;
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B5897', endColorstr='#5B88C7', GradientType=0) !important;
+	background-image: linear-gradient(to bottom, #2B5897 0%, #5B88C7 100%) !important
+}
+
+.QTXDecorativeBackgroundInvert {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5B88C7), color-stop(100, #2B5897)) !important;
+	background-image: -webkit-linear-gradient(top, #5B88C7 0%, #2B5897 100%) !important;
+	background-image: -moz-linear-gradient(top, #5B88C7 0%, #2B5897 100%) !important;
+	background-image: -ms-linear-gradient(top, #5B88C7 0%, #2B5897 100%) !important;
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5B88C7', endColorstr='#2B5897', GradientType=0) !important;
+	background-image: linear-gradient(to bottom, #5B88C7 0%, #2B5897 100%) !important
+}
+
+.QTXDecorativeDarkBackground {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000000), color-stop(100, #293D69));
+	background-image: -webkit-linear-gradient(top, #000 0%, #293D69 100%);
+	background-image: -moz-linear-gradient(top, #000 0%, #293D69 100%);
+	background-image: -ms-linear-gradient(top, #000 0%, #293D69 100%);
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#293D69', GradientType=0);
+	background-image: linear-gradient(to bottom, #000 0%, #293D69 100%)
+}
+
+.QTXToolContainerBackground {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5C5B56), color-stop(100, #393834));
+	background-image: -webkit-linear-gradient(top, #5C5B56 0%, #393834 100%);
+	background-image: -moz-linear-gradient(top, #5C5B56 0%, #393834 100%);
+	background-image: -ms-linear-gradient(top, #5C5B56 0%, #393834 100%);
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5C5B56', endColorstr='#393834', GradientType=0);
+	background-image: linear-gradient(to bottom, #5C5B56 0%, #393834 100%)
+}
+
+.QTXToolButtonBackground {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5C5B56), color-stop(100, #393834));
+	background-image: -webkit-linear-gradient(top, #5C5B56 0%, #393834 100%);
+	background-image: -moz-linear-gradient(top, #5C5B56 0%, #393834 100%);
+	background-image: -ms-linear-gradient(top, #5C5B56 0%, #393834 100%);
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5C5B56', endColorstr='#393834', GradientType=0);
+	background-image: linear-gradient(to bottom, #5C5B56 0%, #393834 100%)
+}
+
+.QTXToolButtonBackground:active {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #393834), color-stop(100, #5C5B56));
+	background-image: -webkit-linear-gradient(top, #393834 0%, #5C5B56 100%);
+	background-image: -moz-linear-gradient(top, #393834 0%, #5C5B56 100%);
+	background-image: -ms-linear-gradient(top, #393834 0%, #5C5B56 100%);
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#393834', endColorstr='#5C5B56', GradientType=0);
+	background-image: linear-gradient(to bottom, #393834 0%, #5C5B56 100%)
+}
+
+.QTXToolWidgetBackground {
+	background-color: #474642
+}
+
+/* ############################################### */
+/* STANDARD WIDGET BORDERS                         */
+/* ############################################### */
+
+.QTXWidgetBorder {
+	border-radius: 4px;
+	border: 1px solid #ededed;
+	-webkit-box-shadow: 0 1px #FFF;
+	   -moz-box-shadow: 0 1px #FFF;
+	    -ms-box-shadow: 0 1px #FFF;
+	     -o-box-shadow: 0 1px #FFF;
+	        box-shadow: 0 1px #FFF
+}
+
+.QTXContainerBorder {
+	border-radius: 4px;
+	border-top:    1px solid rgba(250, 250, 250, .7);
+	border-left:   1px solid rgba(250, 250, 250, .7);
+	border-right:  1px solid rgba(240, 240, 240, .5);
+	border-bottom: 1px solid rgba(240, 240, 240, .5);
+	-webkit-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .3);
+	   -moz-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .3);
+	    -ms-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .3);
+	     -o-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .3);
+	        box-shadow: 0 0 1px 1px rgba(81, 81, 81, .3)
+}
+
+.QTXFlatBorder {
+	border-radius: 4px;
+	border-top:    1px solid rgba(44, 44, 44, .8);
+	border-left:   1px solid rgba(44, 44, 44, .8);
+	border-right:  1px solid rgba(44, 44, 44, .8);
+	border-bottom: 1px solid rgba(44, 44, 44, .8)
+}
+
+.QTXButtonBorder {
+	border-radius: 4px;
+	border-top: 1px solid rgba(250, 250, 250, .7);
+	border-left: 1px solid rgba(250, 250, 250, .7);
+	border-right: 1px solid rgba(240, 240, 240, .5);
+	border-bottom: 1px solid rgba(240, 240, 240, .5);
+	-webkit-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-moz-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-ms-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-o-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8)
+}
+
+.QTXButtonBorder:active {
+	border-radius: 4px;
+	border-top: 1px solid rgba(240, 240, 240, .5);
+	border-left: 1px solid rgba(240, 240, 240, .5);
+	border-right: 1px solid rgba(250, 250, 250, .7);
+	border-bottom: 1px solid rgba(250, 250, 250, .7);
+	-webkit-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-moz-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-ms-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-o-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8)
+}
+
+.QTXDialogButtonBorder {
+	border-radius: 4px;
+	border-top: 1px solid rgba(250, 250, 250, .7);
+	border-left: 1px solid rgba(250, 250, 250, .7);
+	border-right: 1px solid rgba(240, 240, 240, .5);
+	border-bottom: 1px solid rgba(240, 240, 240, .5);
+	-webkit-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-moz-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-ms-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-o-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8)
+}
+
+.QTXDialogButtonBorder:active {
+	border-radius: 4px;
+	border-top: 1px solid rgba(240, 240, 240, .5);
+	border-left: 1px solid rgba(240, 240, 240, .5);
+	border-right: 1px solid rgba(250, 250, 250, .7);
+	border-bottom: 1px solid rgba(250, 250, 250, .7);
+	-webkit-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-moz-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-ms-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	-o-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8);
+	box-shadow: 0 0 1px 1px rgba(81, 81, 81, .8)
+}
+
+.QTXEditBorder {
+	border-top: 1px solid #979797;
+	border-left: 1px solid #979797;
+	border-bottom: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	-webkit-box-shadow: inset 0 0 3px rgba(18, 18, 18, .6);
+	-moz-box-shadow: inset 0 0 3px rgba(18, 18, 18, .6);
+	-ms-box-shadow: inset 0 0 3px rgba(18, 18, 18, .6);
+	-o-box-shadow: inset 0 0 3px rgba(18, 18, 18, .6);
+	box-shadow: inset 0 0 3px rgba(18, 18, 18, .6)
+}
+
+.QTXListBorder {
+	border-top: 1px solid #979797;
+	border-left: 1px solid #979797;
+	border-bottom: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 0 3px rgba(18, 18, 18, .6);
+	-moz-box-shadow: inset 0 0 3px rgba(18, 18, 18, .6);
+	-ms-box-shadow: inset 0 0 3px rgba(18, 18, 18, .6);
+	-o-box-shadow: inset 0 0 3px rgba(18, 18, 18, .6);
+	box-shadow: inset 0 0 3px rgba(18, 18, 18, .6)
+}
+
+.QTXToolWidgetFlatBorder {
+	border-top: 1px solid rgba(44, 44, 44, .7);
+	border-left: 1px solid rgba(44, 44, 44, .7);
+	border-right: 1px solid rgba(44, 44, 44, .7);
+	border-bottom: 1px solid rgba(44, 44, 44, .7)
+}
+
+.QTXToolWidgetBorder {
+	border: 1px solid #353431
+}
+
+.QTXToolContainerBorder {
+	border-top: 1px solid rgba(33, 33, 33, .7);
+	border-left: 1px solid rgba(33, 33, 33, .7);
+	border-right: 1px solid rgba(33, 33, 33, .7);
+	border-bottom: 1px solid rgba(33, 33, 33, .7);
+	-webkit-box-shadow: 0 1px 1px rgba(33, 33, 33, .4);
+	-moz-box-shadow: 0 1px 1px rgba(33, 33, 33, .4);
+	-ms-box-shadow: 0 1px 1px rgba(33, 33, 33, .4);
+	-o-box-shadow: 0 1px 1px rgba(33, 33, 33, .4);
+	box-shadow: 0 1px 1px rgba(33, 33, 33, .4)
+}
+
+.QTXToolButtonBorder {
+	border-radius: 4px;
+	border-top: 1px solid rgba(250, 250, 250, .7);
+	border-left: 1px solid rgba(250, 250, 250, .7);
+	border-right: 1px solid rgba(220, 220, 220, .5);
+	border-bottom: 1px solid rgba(220, 220, 220, .5);
+	-webkit-box-shadow: 1px 1px 0 0 rgba(33, 33, 33, .9);
+	-moz-box-shadow: 1px 1px 0 0 rgba(33, 33, 33, .9);
+	-ms-box-shadow: 1px 1px 0 0 rgba(33, 33, 33, .9);
+	-o-box-shadow: 1px 1px 0 0 rgba(33, 33, 33, .9);
+	box-shadow: 1px 1px 0 0 rgba(33, 33, 33, .9)
+}
+
+.QTXToolButtonBorder:active {
+	border-top: 1px solid rgba(250, 250, 250, .5);
+	border-left: 1px solid rgba(250, 250, 250, .5);
+	border-right: 1px solid rgba(220, 220, 220, .7);
+	border-bottom: 1px solid rgba(220, 220, 220, .7);
+	-webkit-box-shadow: 0 0 1px 1px rgba(33, 33, 33, .9);
+	-moz-box-shadow: 0 0 1px 1px rgba(33, 33, 33, .9);
+	-ms-box-shadow: 0 0 1px 1px rgba(33, 33, 33, .9);
+	-o-box-shadow: 0 0 1px 1px rgba(33, 33, 33, .9);
+	box-shadow: 0 0 1px 1px rgba(33, 33, 33, .9)
+}
+
+.QTXDecorativeBorder {
+	border-radius: 4px;
+	border: 1px solid #AAA;
+	-webkit-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	-moz-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	-ms-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	-o-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	box-shadow: inset 0 0 10px rgba(18, 18, 18, .9)
+}
+
+.QTXListMenuBorder {
+	-webkit-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .3);
+	-moz-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .3);
+	-ms-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .3);
+	-o-box-shadow: 0 0 1px 1px rgba(81, 81, 81, .3);
+	box-shadow: 0 0 1px 1px rgba(81, 81, 81, .3)
+}
+
+.QTXListMenuBorder:active {
+	border: 1px solid #AAA;
+	-webkit-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	-moz-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	-ms-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	-o-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	box-shadow: inset 0 0 10px rgba(18, 18, 18, .9)
+}
+
+.QTXListMenuBorder:first-child {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px
+}
+
+.QTXListMenuBorder:last-child {
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px
+}
+
+/* ############################################### */
+/* WINDOWING CSS TYPES                             */
+/* ############################################### */
+
+  .TQTXWindowCloseGlyph {
+    flex-basis: 23px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .TQTXWindowMinimizeGlyph {
+    flex-basis: 23px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .TQTXWindowFullScreenGlyph {
+    flex-basis: 23px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .TQTXWIndowZOrderGlyph {
+    flex-basis: 28px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .TQTXWindowSizerGlyph {
+    flex-basis: 23px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .TQTXWindowFooterContent {
+    color: #000000;
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  .TQTXWindowTitle {
+    color: #000000;
+    padding-bottom: 2px;
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  .TQTXWindowTitle_Focused {
+    color: #FFFFFF !important;
+    text-shadow: rgb(0, 0, 0) 1px 1px 0px;
+  }
+
+  .TQTXWindowFooter {
+    border-top: 1px solid #92BFFF;
+    height: 26px;
+  }
+
+  .TQTXWindowContent {
+    background-color: #CFCFCF;
+    padding: 0px !important;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+    border-bottom: 1px solid #19234D;
+    border-right: 1px solid #19234D;
+    border-left: 1px solid #19234D;
+  }
+
+  .TQTXWindow {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-family: "Ubuntu", "verdana", "Helvetica";
+    background-color: #CFCFCF;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0, .4);
+  }
+
+  .TQTXWindow_focused {
+    background-color: #618ECE !important;
+  }
+
+  .TQTXWindowHeader {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+    cursor: default;
+    padding: 0px !important;
+    margin: 0px !important;
+    background-color: inherit;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAAdCAYAAACHffYTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAAFJ0lEQVR4Xu2byUp2SQyG6/4XXsvvPM8TIgiCgoKiLty4ceO+mtMQCCF5K2XlNKe7s3iQ804Vvr3l4eGhJkmSJMujnJ2d1SRJkmR5lNXV1arx588fVY9kemOOd3p3KY96yPdq0Vj3jNK7S3nUQ75Xi8a6Z5TeXcqjHvK9WjTWPaP07lIe9ZDv1aKx7uGU9fX1qrG2tqbqv2HasvYi9Na+1ZEa6XPmf4P1Bnmjemvf6kiN9Dnzv8F6g7xRvbVvdaRG+pz532C9Qd6o3tq3OlIjfc78b7DeIA/pZXNzs25sbJhMPqHpXOMgT4P2+K7UiFZPIjMcLT/R8r1Yb7X2kadBe3xXakSrJ5EZjpafaPlerLda+8jToD2+KzWi1ZPIDEfLT7R8L9ZbrX3kadAe35Ua0epJZIaj5SdavhfrrdY+8jRoj+9Of8vW1lbVmExNj4SO0bwRencpj3rI92rRWPeM0rtLedRDvleLxrpnlN5dyqMe8r1aNNY9o/TuUh71kO/VorHu4ZSdnZ2qsb29reqRTG/M8U7vLuVRD/leLRrrnlF6dymPesj3atFY94zSu0t51EO+V4vGumeU3l3Kox7yvVo01j2csre3V3d3d00mn9B0rnGQp0F7fFdqRKsnkRmOlp9o+V6st1r7yNOgPb4rNaLVk8gMR8tPtHwv1lutfeRp0B7flRrR6klkhqPlJ1q+F+ut1j7yNGiP70qNaPUkMsPR8hMt34v1VmsfeRq0x3env+Xg4KBq7O/vq3ok0xtzvNO7S3nUQ75Xi8a6Z5TeXcqjHvK9WjTWPaP07lIe9ZDv1aKx7hmld5fyqId8rxaNdQ+nHB0dVY3Dw0NVj2R6Y453encpj3rI92rRWPeM0rtLedRDvleLxrpnlN5dyqMe8r1aNNY9o/TuUh71kO/VorHu4ZSTk5OqcXx8rOqRTG/M8U7vLuVRD/leLRrrnlF6dymPesj3atFY94zSu0t51EO+V4vGumeU3l3Kox7yvVo01j2cv/+T8PT01IT/V4tH49+aJ3My4wV1end5XushX/M42g7S+LfmyZzMeEGd3l2e13rI1zyOtoM0/q15MiczXlCnd5fntR7yNY+j7SCNf2uezMmMF9Tp3eV5rYd8zeNoO0jj35onczIjKRcXF/X8/Nxk8gmPxr81T+Zkxgvq9O7yvNZDvuZxtB2k8W/NkzmZ8YI6vbs8r/WQr3kcbQdp/FvzZE5mvKBO7y7Paz3kax5H20Ea/9Y8mZMZL6jTu8vzWg/5msfRdpDGvzVP5mRGUq6urqrG5eWlqkcyvTHHO727lEc95Hu1aKx7RundpTzqId+rRWPdM0rvLuVRD/leLRrrnlF6dymPesj3atFY93DK9fV11ZhMTY+EjtC8EXp3KY96yPdq0Vj3jNK7S3nUQ75Xi8a6Z5TeXcqjHvK9WjTWPaP07lIe9ZDv1aKx7uGUm5ubmiRJkiyPcnt7W5MkSZLlUe7u7mqSJEmyPMr9/X1NkiRJlkd5fHysSZIkyfIoz8/PdU6enp5U/Z9kCTf8lvz9xsjfb4z8/cYYvb28vr7W/zovLy+qruHN9mz+28nfb4z8/cb4P/9+5ePjoyZJkiTLo3x+ftYkSZJkeZSvr6+aJEmSLI/y/f1dkyRJkuVRfn5+apIkSbI8yvv7e9V4e3tT9UimN+Z4p3eX8qiHfK8WjXXPKL27lEc95Hu1aKx7RundpTzqId+rRWPdM0rvLuVRD/leLRrrHk5ZWVmpSZIkydJYqX8BJiUk3cGXLyQAAAAASUVORK5CYII=");
+    height: 29px !important;
+    border-bottom: rgba(0,0,0, 1.0) 1px solid;
+    box-shadow: 2px 7px 14px -3px rgba(0,0,0,0.65);
+  }
+
+  .TQTXWindowHeader: disabled {
+    padding: 0px !important;
+    margin: 0px !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAAdCAYAAACHffYTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAAFJ0lEQVR4Xu2byUp2SQyG6/4XXsvvPM8TIgiCgoKiLty4ceO+mtMQCCF5K2XlNKe7s3iQ804Vvr3l4eGhJkmSJMujnJ2d1SRJkmR5lNXV1arx588fVY9kemOOd3p3KY96yPdq0Vj3jNK7S3nUQ75Xi8a6Z5TeXcqjHvK9WjTWPaP07lIe9ZDv1aKx7uGU9fX1qrG2tqbqv2HasvYi9Na+1ZEa6XPmf4P1Bnmjemvf6kiN9Dnzv8F6g7xRvbVvdaRG+pz532C9Qd6o3tq3OlIjfc78b7DeIA/pZXNzs25sbJhMPqHpXOMgT4P2+K7UiFZPIjMcLT/R8r1Yb7X2kadBe3xXakSrJ5EZjpafaPlerLda+8jToD2+KzWi1ZPIDEfLT7R8L9ZbrX3kadAe35Ua0epJZIaj5SdavhfrrdY+8jRoj+9Of8vW1lbVmExNj4SO0bwRencpj3rI92rRWPeM0rtLedRDvleLxrpnlN5dyqMe8r1aNNY9o/TuUh71kO/VorHu4ZSdnZ2qsb29reqRTG/M8U7vLuVRD/leLRrrnlF6dymPesj3atFY94zSu0t51EO+V4vGumeU3l3Kox7yvVo01j2csre3V3d3d00mn9B0rnGQp0F7fFdqRKsnkRmOlp9o+V6st1r7yNOgPb4rNaLVk8gMR8tPtHwv1lutfeRp0B7flRrR6klkhqPlJ1q+F+ut1j7yNGiP70qNaPUkMsPR8hMt34v1VmsfeRq0x3env+Xg4KBq7O/vq3ok0xtzvNO7S3nUQ75Xi8a6Z5TeXcqjHvK9WjTWPaP07lIe9ZDv1aKx7hmld5fyqId8rxaNdQ+nHB0dVY3Dw0NVj2R6Y453encpj3rI92rRWPeM0rtLedRDvleLxrpnlN5dyqMe8r1aNNY9o/TuUh71kO/VorHu4ZSTk5OqcXx8rOqRTG/M8U7vLuVRD/leLRrrnlF6dymPesj3atFY94zSu0t51EO+V4vGumeU3l3Kox7yvVo01j2cv/+T8PT01IT/V4tH49+aJ3My4wV1end5XushX/M42g7S+LfmyZzMeEGd3l2e13rI1zyOtoM0/q15MiczXlCnd5fntR7yNY+j7SCNf2uezMmMF9Tp3eV5rYd8zeNoO0jj35onczIjKRcXF/X8/Nxk8gmPxr81T+Zkxgvq9O7yvNZDvuZxtB2k8W/NkzmZ8YI6vbs8r/WQr3kcbQdp/FvzZE5mvKBO7y7Paz3kax5H20Ea/9Y8mZMZL6jTu8vzWg/5msfRdpDGvzVP5mRGUq6urqrG5eWlqkcyvTHHO727lEc95Hu1aKx7RundpTzqId+rRWPdM0rvLuVRD/leLRrrnlF6dymPesj3atFY93DK9fV11ZhMTY+EjtC8EXp3KY96yPdq0Vj3jNK7S3nUQ75Xi8a6Z5TeXcqjHvK9WjTWPaP07lIe9ZDv1aKx7uGUm5ubmiRJkiyPcnt7W5MkSZLlUe7u7mqSJEmyPMr9/X1NkiRJlkd5fHysSZIkyfIoz8/PdU6enp5U/Z9kCTf8lvz9xsjfb4z8/cYYvb28vr7W/zovLy+qruHN9mz+28nfb4z8/cb4P/9+5ePjoyZJkiTLo3x+ftYkSZJkeZSvr6+aJEmSLI/y/f1dkyRJkuVRfn5+apIkSbI8yvv7e9V4e3tT9UimN+Z4p3eX8qiHfK8WjXXPKL27lEc95Hu1aKx7RundpTzqId+rRWPdM0rvLuVRD/leLRrrHk5ZWVmpSZIkydJYqX8BJiUk3cGXLyQAAAAASUVORK5CYII=");
+  }
+
+  .TQTXWindowHeader_focused {
+    padding: 0px !important;
+    margin: 0px !important;
+    background-image: url("data:image/png;base64,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");
+  }
+
+  .TQTXWindowCloseGlyph {
+    cursor: default;
+    background-repeat: no-repeat;
+    padding: 0px !important;
+    margin: 0px !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAdCAYAAACwuqxLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAACrklEQVRIS7WUy0orQRCGA3kGH8FXcOFeyN43cOXKN1BwJQgGxQtRBIkQlRjxGjVGRU1MjBoTxfslKBJBQbJxX4evmp7T5nCyyiw+pqfqr/m7q7snICKB+fl5OTw8lOvr66ajHz86OvKNADNnsLq66gsBlpHJZGR9fb1prK2tKYzVIJvNysbGhpJMJj1szI27MZf/5TyDzc1NX/AMtre3m8rg4KCcnp4ag+PjY0mlUsrOzo5sbW1pD5eWlmRxcVFJJBKKfSfHJjJLW2e/ARicnZ0Zg1wuJ7u7ux70Lh6PSywWE47xwsLCL4iRQ4PWrbUMDQ1JsVg0Bvl8Xvb39z0oam9vl2Aw2BA0aN1aSzgcllKpZAxOTk7k4ODAgxa1tLRIf3+/to8JuBAjhwatW2sZHh6WcrlsDAqFgl42e+nS6bS0trbK8vLyPwa0k9jKyopq6L2t42nHIyMjcnl5aQzYbU4SF44nS2xra5NoNKoFxCxoiM3Ozqpmb2/Pq+Npx6Ojo3J1dWUM2G1mZmGJHR0dMjk5qQVuDoiRQ4O2Pg9jY2Nyc3NjDM7Pz3+1gRl2dnbqRjEbNwfEyKFBW5+H8fHxvwYcJ/bBwge6urpkYGBAZ+vmgBg5NGjr8zAxMSF3d3fG4OLiQttk4VT19PRIX1+f3sr6M06MHBq0bq0lEonI/f29MeA4YWKhZb29vdLd3a0fc28oECOHBq1ba5mampKnpydjwG5zpCy8z83NSSgUagia+lrL9PS0vLy8GAM2w+X29laX9/j42BA0aOvrYWZmRl5fX40BwoeHBw+KWd7z83ND0KB1a+23uCfv7+/GACHLaSb8DD8+PoxBpVKRt7c3X1ADBtVq1RfUgMHX15cvqMHn56fUajVfUIPv72/5+fnxBTXgvPpFgF8rf0Z/CMsf9mTVmGAvPj0AAAAASUVORK5CYII=");
+  }
+
+  .TQTXWindowCloseGlyph_focused {
+    padding: 0px !important;
+    margin: 0px !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAdCAYAAACwuqxLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAAD+klEQVRIS7XV20+TZxwH8CfhD1iy7HJbdrOL7WJ3XixZsmUxCxOnG4ownQcUJjAJUjIjdghSlQJtgbYgxcjR0VChnOnKoYzJaQIrTmASNCOVQhFG8YC7/O75vfJ2D+9eDsnixSfvr8/v+32fNDSBAWDRqTXQmH+F3jG3Bf821PMsWnMTx3P6JMdyfpYo552SO2KPaczDOK7/BV+kt2Hv+VaJcpZcULeP74jYkXrre5ZT50NsXj/2a9uxjwqcPItPmZhRnonkHdM7HuFk/gC+yujYVORFV4jamXguonOWd2sOccYhRF3qwsGsToly3im5I/ZYbr0f8aZhHMruDh0q552SO+STWCOyqsbA8vkFpwvvIOayJySahw9m8q/4Qwsitc04QE8Z/yydZbQiKsuFGF0Pvr7Si5grvEvW3/HpqQLobnr5Bc55JJhHcUTfh8P850VisjsRmV6PiNQqRJytVLVXU40DFxqkLHW/Efpk97eFuFo7DmZwLiDJMoajubdxlP9cyWGdG2+9/yHCwsK29DbPUFbqCn3yWYIVV+33wIyNASSXeBFrHMQJw8BLud147fU3YDKZ4PV6VdGOMpSl7oY+F55khb5uAszUuMgvGA+FSJzBgzffeReDg4OYnJxURTvKxBt7cdI0JBHfsSepGLmOKX5B02Ok2O4hjv+hZYmFt/HeB7vg8XgwMzOjinaUSSrqR3zRiER8R8SZEuQ33AcraF5C2vUpJBb/hgTrmPRMtg5j10e74XK54PP5VNGOMsnWISTxjiiRv2f/2TIUNM2AFbUs41zlNJJtv+NM6V1JaukIPv48Ck6nE4FAQBXtKENZ6op9Epl2A+bWh/yC1r+grXmAtPKpkHM3xrHnUBzsdjuCwaAq2lGGsmJXFv19Ja51zIKZW1eQaX+I89XTL1Xdh7Z6AlGxqaioqMDa2poq2lGGsnI3fR3NR7TVKOv0gVnaVpB9axYX7TMhl2qncSJFB61WC7/fr4p2lKEsdTLtDza841jGjyjv4f9wLO1B6J1zuMwvITrHn8hpmEV6URPCw8O3RBnKyl3RqSw7avoCYMWuIIwt88hr8oUYWh7B0u7nX3EB5Z6AKtpRhrJiV3ZaVwd7/2N+QccTmDsWUdg+v4HFtYAS9wJsXQFVtKOMsif7Tl+P+uFlsJKfnsLWvYTSrkXJNV6W5/9DY2hE8+gKv8D9DOW9K9ySYFkxi59FyvP/5lip+zlqB1ZhH1x5JZit8zka7jxB4+iqxDny71Oet7JdhpV1raHN+wwdd5+GuISnOIsZ5ZmcVeZYWfcLdE28QO8fa5vybDJvh7Lses/fMHauSgzuoEQ575TcEXtMUzSGL1Mcr4gD/wAfheMPGQyFTAAAAABJRU5ErkJggg==");
+  }
+
+  .TQTXWindowZOrderGlyph {
+    cursor: default;
+    background-repeat: no-repeat;
+    padding: 0px !important;
+    margin: 0px !important;
+    flex-basis: 28px !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAADoElEQVRIS72Vx0otQRCGD/gK+gbqA4gKIrhRxL2+gIqCC0FcuFFEDIiioqIiZsxizjnnnDHnBG7cuK/LVzKHmTlz5W7uWXznzHRV119dXd3jOjs7k//N8vKydHV1SUREhLhWVlbEGwwMDEhGRoa4hoeHxYmhoSE3TrZ/GbOTn58vrpGRERkdHfXgt3En29/8wbCVlZWJa2xsTMbHx93w/r9QwYmJCXGCjKh7T0+PdHd3KzzbwQdfYx5Jm+OYx1WwuLhYdnZ2ZGpqygJ70tnZKS0tLdLa2irt7e3S0dHhpq2tTW344GvMm5yctMQxj7sF9/b2ZHp62sLg4KCEhYWJj4/Pr+CDr32+HURVsLS0VPb392Vubs4CZfL19ZXs7Gw9R7T26uqqG96x4YOvMW92dtYSx2BmZuZHkJ/Dw0NZWFiwQAkCAgKkr69PBZeWlnQimRr7Qmn9/f2lv79fy0o3slf2WMBcFSwvL5ejoyMNaIaMQkJCpKmpSebn5zUBGoTm6e3t1USqqqokODhYnxnDhrg9FhDDLXhycuK+EYzykVFUVJRUV1drhgiGh4c77qMZfIw4RixYXFz8EaysrJTT01NZW1tT2B/+cYiNjZWSkhLNkBX7+flJXl6ebG9vy8bGhpBsXFycztna2pLc3Fz1MeIYsYAYKkhZzs/PNYAZsoqPj5eCggJ1ZpWBgYHaIByj9fV1KSwslISEBH1mDBs+9lhGPBWkZAhubm5aIKvU1FTJysrSW4JmYE8bGxu1cRjDhg++iHJWQ0NDPWIBq1XBmpoaubi40DKZoUSZmZmSnJzsvpoiIyO1jKyEd2z44Msq6uvrJTo62iMWkJQK1tbWyuXlpezu7lrgMuCGiYmJcRMUFKTfNPMYPviyioqKCt1TeywgIRWsq6uTm5sbOTg4sMDZpHuNjyhjSUlJ2kRcFMY4PviyyqKiIklMTPSIBdhVsKGhQe7u7uT4+NgCgehegrLHnNX09HTtUhqAFZE1peKdc5aTkyNpaWkesYCmUsHm5mZ5fHzUoL+BOAFTUlK0Yzk2ZhjDho/TfFapguzBy8uLXF1d/cr19bXeJub9cwIfp/msUgW5D9/f37WsTtzf32sF4Onp6a9gN+bc3t5aYgBbo4JOk808Pz8rVOH19dURbPg4zTfgJKjg29ubeANOggp+fn6KN3h4ePgR/Pr6Em9AyVXw+/tbvMHHx8ePoNGBdiiBgZPtX8bsqCA/3qNM/gA10/rDpOO5rwAAAABJRU5ErkJggg==");
+  }
+
+  .TQTXWindowZOrderGlyph_focused {
+    padding: 0px !important;
+    margin: 0px !important;
+    background-image: url("data:image/png;base64,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");
+  }
+
+  .TQTXWindowFullScreenGlyph {
+    cursor: default;
+    background-repeat: no-repeat;
+    padding: 0px !important;
+    margin: 0px !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAdCAMAAACZrWzKAAAABGdBTUEAALGPC/xhBQAAAwBQTFRFAgICEBAQGhoaJycnKioqKysrMTExOzs7PDw8R0dHSUlJUVFRUlJSW1tbXFxcZmZmbm5ub29veHh4fHx8gICAhISEh4eHioqKjIyMjY2Njo6OkJCQkZGRkpKSk5OTlJSUlZWVlpaWl5eXmJiYmpqam5ubnJycn5+foKCgoaGhoqKio6OjpKSkpaWlpqamqKioqampq6urrq6ur6+vsLCwsbGxsrKys7OztLS0tbW1tra2t7e3uLi4ubm5urq6u7u7vLy8vb29vr6+v7+/wMDAwcHBwsLCw8PDxMTExcXFxsbGx8fHyMjIycnJysrKy8vLzMzMzc3Nzs7Oz8/P0NDQ0dHR0tLS09PT1NTU1dXV19fX2NjY2dnZ2tra29vb3Nzc3d3d3t7e39/f4ODg4eHh4uLi4+Pj5OTk5eXl5ubm6urq7+/v9PT0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOH3cugAAAAlwSFlzAAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMS4xYyqcSwAAAXdJREFUKFNt0FlXgkAUB/DbXrRHadG+Z4m0GFiu5DjB0ERRZBQVadr6/Z+bEe30wO/h3nv+lzMDwH0kwJHguCWdDjuXZkDTVFXjwtaeIXPCZDg+dGY4ZbTDfUXZ7zhkO4hf5nLpVGIvKSd2ErIsJxOpbDYL8atC4agP/unN5/Mwd10qaV2z5x14tqtYLIJ0c3aW7VbbIaN267oO87cIFXoUhA5EQRBEVFZ6yuUyLNxhXOrfxDjHUkHEaLe/UqnAUtUw9IElw2CxqmYMvDXIToJljxA0tEZI+DQ5XxsyTRNWPMuqjKxYVqkVW8biMCEEVh8oNcbmKUX8QkSJNEophfVH2zbH46yw2DRtKz5u2zZsPDsOnYyxIgoipc5FbNJxHNgKXPd6arr9+zHWp6dc14XtuudVZybYJ7RNzHieB7tN339S+Ft0KL7vg/wZvNbfuLC+1YMgeAE2NBrN9z/NBt/BRyT4igTfkeAnEtRbarWwczUGpAiS9AtDc6IpAX76RwAAAABJRU5ErkJggg==");
+   }
+
+  .TQTXWindowFullScreenGlyph_focused {
+    cursor: default;
+    padding: 0px !important;
+    margin: 0px !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAdCAMAAAB2bwf0AAAABGdBTUEAALGPC/xhBQAAAwBQTFRFAgICCw0PFBcaFR4qHSEmJisxLjQ8Nj5GNj5HPUZSSUlJRVBdTVloVWJzXmx9c3NzfHx8QGKNQmSQQ2aRRmeTR2mURmydR22eSWuWS2yXSG2eT3GaUXOcS3WoTHWoTnetTniuT3ivTHq0TXu1Tnu2T3y3UG+qV3agWnujXn6lUHuyUHyzUny2U323VH+0UX64Un+5Z3eJUoC5U4G7VIC6VIG7VIG8VYK8VoO9W4S4WIS+WIW/XIW5Y4CoZoOqa4isYYi7Yom8ZY2/coyvf5SwWojBW4nCXojCXojDXYrEX43GYY3GYI7HZY7AZo/BYo/IZJHKZJHLZZLMaJDDaZHEbJTHaJXOaZbPbJTIb5jLbJjRbZnScJnMcp3Vc57WdJ3Qd6PaeaDSf6XWfabbfqfciYmJi4uLjo6Oj4+PkpKSk5OTlJSUl5eXmZmZm5ubnJycn5+foqKip6enqKioq6urr6+vsrKytLS0uLi4vLy8gKLNgqPPhKbRhabSh6jThKrbhKzfiKrVi6zXjrDZkbPclrbfhKzgiKrliK/ii7DgibDjj7TljLjvjbrwkLXmk7fml7vpl7vqmbrjnb3lmbzpmbzqnb7qnr/rnr/so8HpocHrocHso8LspcPqpMLrpcPspcPtpsTspsXtp8Xup8buq8frqMbsqcbtrcvxrszxsczutdHzvtf1wMDAxcXFycnJzc3NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMONKfwAAAAlwSFlzAAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMS4xYyqcSwAAAeZJREFUKFNt0PlTEmEYwPHHs1yvNSuKDhhlsSwkYxpIu5MJdzA1D5QSV8Uru6yF3e3SLlIUQSsgLbWk1q2A/sSedxGnH/jsvN933mfeH3YX3ucGjhvIgTJRT7igtgbVZpFDDSmYGIYxGEwGxJgMDHlwY4AxE2fUqDWbyQhsFovl7Cm9SqfX6XT6+nMIbFVPraePa7RajVaj0R5Ex0xWqxVs+541NRTAfwoampqbobX6uf18Hj3t3zFN512w2+3Quv+F40q+//GuR/lX8UOAPfCSvVb4hOd5mqIomucfFraxLAvth14524oe+Hwijina57tfdNPpdMKtw687uorvCgLO/X5BEO4Vd3d0doLryJvenj1Topi5L4pTe/t6XS64ffStu79kUpIkdS5JkyV33G43eOreDQyWTiSTSZxikxOlgwMeD3AnVrihsvFUKoVzbGq8bIjjOPCe/DAyXD6WTqdpisamx8qHR7xeCFz8PDtTMfp312jFzGwgAMFLX+fmGyt3/gKqbJyfCwZh6fKPhXALeZeslvBCeAmWr/+KfIptyvJPWU7I6FvsYyQSgXgsGo2tbmxuIMz6+pe1eDQeh4RqK7Oh7yRbCVC2FUVdynamJIoCv3ODP7lBaBGFsshhERsCYy5G4z8Z1PV1f1m7ngAAAABJRU5ErkJggg==");
+   }
+
+  .TQTXWindowMinimizeGlyph {
+    cursor: default;
+    background-repeat: no-repeat;
+    padding: 0px !important;
+    margin: 0px !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAdCAYAAACuc5z4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAAC90lEQVRIS7WVOUhrQRSGD6lsBMFGBCsLQavU2ouk0lZrS20tLQQhmGA0LqjgLtpoNC5xjVvivivu+1LY2Nj/j//AXG70xveEl+Jj7j3zn3/mzJybyOnpKVKBrK6uIhXI+Pg4nAiFQorTnBNGb5BwOAwyMTGhmHc7yeZ+0svk5CSmpqYSYOwrXzV2nPQyPT0NO1xxdHQUIyMjGB4eVvj8N5hjX0y8Xi+2t7cRiUQUns/Q0BB6e3vR39+PgYEBDA4O6ntPT4+OfDdwnjHmzMzMWKjx7u4u5ubmlLGxMRQUFMDlcv2K/Px8zM7OWojP58Pe3h4WFhYUHkVGRgYaGhqwsrKirbO2tqbitLQ0Hflu4Dy1zJmfn7cQv9+Pg4MDLC0tKSwjOztbb9b0JA1YTXp6uo52Y0ItcxYXFy2ksbERh4eHWF5eVpiYl5enl8aFotGoxnn+mZmZOhot4Ty1zOGzQQKBAI6Pj63d8Tjcbjc6OzsT+pQfQVZWlpZptITmfX19msOjM0hzczNOTk6wvr6usIzCwkIwzhbiZRKa5+TkaJLREpp3dXWhqKgo4XgkGAzi7OwM8Xhc4Q6Ki4uRm5v7DY/Hg83NTUtLaNLW1qY5sVjMQlpaWtR4Y2ND4Y7KysrAOE3Yiuya/f19HdnzRku466amJpSWliYsKK2trTg/P8fW1pZCYUVFBXipNKGZgYswZrSEJuys8vLyhLi0t7fj4uICOzs7CsuorKwEPxzuyMSTQQ21zLHHpaOjA9fX11oq4WrV1dWor6/XozDxZFBDLXPsceGN3t7e4ujoSGHJNTU1qK2t1Q6xt5YT1FDLHONBpLu7Gw8PD3qBhK1XV1eHqqqqhIb/CWqZYzyIsLmfn59xeXmpXF1d6ZdUUlLyK5hjPIjwp+/t7U2P4+7uTnf/+Pj4jWRxwjnmG25ubiB2wdPTk8IKXl5e/glqmWP3IfL6+opUIO/v70gF8vHxgVQgn5+fSAXCG3Xi/v5ecZpzwugN+tf0//HjD2dq1sgXqefYAAAAAElFTkSuQmCC");
+   }
+
+  .TQTXWindowMinimizeGlyph_focused {
+    padding: 0px !important;
+    margin: 0px !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAdCAYAAACuc5z4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAADzklEQVRIS7XTX0ybZRQG8DdckRjiBRqJCSaGZBeamJgYr5wxGilkf2Ad07kJE2QMspLpqjKl/NlWYmuhpazS1VDYWmmxsBVZgQIdUKAwBBzFrIt2yRaXLhmUoTFeP37nlcrX9kO6RC9+eU8P53nSNIFpXBH8H9gxzTRKNFNxaCe23S6ReM/21Q5i7xeeOLTbSWImlovNrEA1DLH9tUOceBbvYnupVzyzA/VeSJE3jEjupPZSWNFZHw6eHfuHvHEEhaprKDjjxv4zV7dXc2WL8LmwdgBFjaMoEjoIe+f8dbxR1oJG2xIOnfNBrhrC3k97kFfdCdm/UViRu0lWbcUeIXOwbph3EHa4aQJvlrfinP0mDqvHUdTgwdPPvYC0tLTHQhnKUgd1sqPaKbxVYYTaEcQRjR9H1V48kfEkurq6EAwG46Snp8NmsyVRqVQ8837TCO8grPirGeSeuIAmxwqKtdMo1YzhqWee5UXhcDhORkYGnE5nEvoSlCnT+ngHYR/o5yCrMuHLnp9wrGUWx1smkP38Ll4ciUTiZGZmore3N0lHRwfPVOgneQdhZYYbyD/ZLvwb3kIpFQt/3PXiy1heXsbGxkacrKwsuN3uJBaLhWcqDH7eUSp8WXa8bRF7FGbo+m6j3PgDKlun8dIrr8Hv9yMUCsXJzs6Gx+NJYjabeabKOMM7yo0LYFXtN1Hw8TfQ9/+Myq9/hMI0h1dfz0VOTk6SvLw8eL3eJCaTScjIhOwN3kGdrNqyggPKDhiv3YHiYhCnLi5gt0yOtrY2+Hy+lNDt7lw5PrIs8g7ClJ0hvPvZJbQP3cVp6y18Yl3G24XFMBgMmJycTAndUoay1EGdrMb+C47U2mEZvQ+aP7+0gn3vVUKv1yMQCKSEbilDWeogrN55ByX13bBej6DOEUZDdwiHypTQ6XSYn59PCd1ShrLUQZ1M3XcPHzb2wO5/CHXfXahdYZQo6qDVarG0tJQSuqUMZamPMG3/fVScd6F7ehUa96/Q9d/DiRotlEolBgYGUkK3lKEsdVAnax18gJOaPvTOrcHgieDC8AM0mPqRn5//WChDWeqgTmYeW8XpZje+X3wEmi2+VXRNrMExE8V3s+tcz+zWLIVuKWPxPRQ6/sY6hQWxjq9yNF/2r8E+FRV+nnUBvWJbu2+n1jibcH/ZHxWy0c2OKJhz9hGSBCR223AE1iX37MrC7yBXF7ckfo7tttsn7ggbDP6BIQG9iWJ7esUS78Q3sZlN3P4TUsYT3sR5J6xl9Dc0j2yg2btJmGm3k7iMKBebWeEpF/57LvwFjMgRPe7EUckAAAAASUVORK5CYII=");
+  }
+
+  .TQTXWindowSizerGlyph {
+    cursor: default;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAAB/UlEQVQ4T52TO4+pURSGT+tnUKqplUyhEQ0JcamIikQxoaCQIBIqidCJSCSDRBQu4864j9vveSfvSr4vZsyZMznFm/XZe+1nXf05Ho/4rXa7HVarFebzuVj+Vu5+BTocDthsNpjNZnh9fUWv1xO7XC7ljj7/BO33e7y9vWE6neLl5QU+nw8ajQZ+vx+dTkfu6fcjiE4sYTweI5/PQ6/XI5fLCVir1aJWq6nl/RWkQJhJJBKByWTC6XTC5XLBdruF0WhEpVL5GaRA2FSW4na7BXI+n8WyX09PTygUCvLNNw+g+0wIyWazAqDe39/Fh4+dTidSqdT3IE6A9U8mE3i9XqTTaTULBUKxtFAohFgshvV6/QhSRsyeuFwuAXyFUOxLPB5HOByWwDxTQbwkhNNhY/n4OwjFzDm9QCAgbeCZCuJBs9mUEdPxvidfxftyuQyPxyNLyTMVtFgs5CKZTMo3RSeK6bNs9oaZE9RoNOBwOB5BdOTGcvUHgwH6/b7Y4XAoZ4pGo5EMo9VqwWazScBPIIqT0Ol0MBgMsFgsEjEYDOL5+RmZTAbFYhHVahXtdluCWK3Wx6mxsVzAbreLer2OUqkkDU0kEohGoxKEe8X9sdvtAjGbzWoSKkiZEv8C97per9/qdruJ5VA+gRTYvZQ9opTtVsQgtPR7AP2/jvgA82AAzPf38YEAAAAASUVORK5CYII=");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .TQTXWindowSizerGlyph_focused {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAACSklEQVQ4T53S3U9ScRgH8G75O7xLbqwrlmtUJkgSKQRaHBB5U4xpSU3BRYuW2gEh7WVW9LLGVTdttTIuuglSV3lAUTY2LhhsbFywccfdt/McZokQsi6enZ39nvM5v+flmGlpC+2G0f8DzOJ36O9/E570vn/WFjQS+AXDgw0M+75CM/cRg7PvofWuQT8fF84o50hoxP8TzEIcOu8XXHCG0dmtgUgkQtc5Btq5D8I55bWEKEk/H4P29iecHvZCLBYjGAwilUqho6MDatdbPqdW3j8hAeF7QciJXgukUikSiYSApNNpSCQSqKdWW0MHkeOnNDAajXVIJpOBSqXCpfEATP7N5tDBcjq7L4Nl2QYkm83CarVCab7bHKIJ1Br7uSWSy+Xg8XigYGYw6t9ohJjFdQzdieKk3Na0nH2kUCggFApBPjTJQ+v1EC3XFX5PzjC+hsYeRorFIiKRCGQaeyNEmzrgiggjPgoplUqIRqM4rzLAzMbrIcNCDF1n9X/2pBVSLpfBcRx6+nWNkDmwKWxsO0ilUkE+n0dP3wAsbKweGlvmIFU7hY2lZaM9oRHTdKix1BMqh25CSLVaRW+fEralQ1OzLyfgCMYwwa7B7nsHkzuMq9dD0DnuQW12Q6WfRL/WCsUgA7lSA5niImQyGRwrte//lhbiMLaShPPpNqZWd3Dj2Q6mn6fgepHCzfAubr3cxQwfs6/24H69B8+btHA2/ihZD1GMBjmY+bDwqPUhBxt/Swq6Lf2EPnI8TmKCj2tPtoV3ymuA/j+28BtrXYT80IXhrQAAAABJRU5ErkJggg==");
+  }
+
+
+/* ############################################### */
+/* APPLICATION MENU [WINDOWING]                    */
+/* ############################################### */
+
+  .TQTXMainMenu {
+    color: #000000;
+    border-style: solid;
+
+    border-top-width: 1px;
+    border-top-color: #626262;
+
+    border-bottom-width: 1px;
+    border-bottom-color: #626262;
+
+    background: #EEEEEE;
+    background: linear-gradient(#EEEEEE, #D2D2D2);
+
+  }
+
+  .TQTXMenuHeader {
+    padding: 2px;
+    height: 100% !important;
+    border-left: 1px solid rgba(255,255,255, .3);
+    border-top: 1px solid rgba(255,255,255, .3);
+    border-right: 1px solid rgba(0,0,0, .3);
+  }
+
+  .TQTXMenuContainer {
+    border-top: 1px solid rgba(255,255,255, .3);
+    border-bottom: 1px solid rgba(0,0,0, .3);
+    border-right: 1px solid rgba(0,0,0, .3);
+
+    background-color: #DFDFDF;
+
+    -webkit-box-shadow: 3px 4px 6px 1px rgba(0,0,0, .2);
+       -moz-box-shadow: 3px 4px 6px 1px rgba(0,0,0, .2);
+        -ms-box-shadow: 3px 4px 6px 1px rgba(0,0,0, .2);
+         -o-box-shadow: 3px 4px 6px 1px rgba(0,0,0, .2);
+            box-shadow: 3px 4px 6px 1px rgba(0,0,0, .2);
+
+  }
+
+  .TQTXMenuText {
+    color: inherit;
+    margin-left: 2px;
+    margin-right: 2px;
+    line-height: 1.5;
+  }
+
+  .TQTXMenuItem {
+    border-bottom: 1px dotted rgba(0,0,0, .3);
+    height: 28px !important;
+    padding-left: 2px;
+  }
+
+  .TQTXMenuItem:hover {
+    color: blue;
+  }
+
+  .TQTXMenuGlyph {
+    margin-top: 2px;
+    border: 1px dotted rgba(0,0,0, .3);
+    width: 22px;
+    height: 23px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==) repeat !Important;
+  }
+
+
+/* ############################################### */
+/* STANDARD WIDGET TYPES                          */
+/* ############################################### */
+
+.TQTXWidget {
+	background-color: #EFEBE7;
+	color: #FFF
+}
+
+.TQTXForm {
+	padding: 2px;
+	background-color: #EFEBE7;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0)
+}
+
+.TQTXEdit {
+	padding: 2px;
+	resize: none;
+	font-size: 14px;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	-o-user-select: text;
+	user-select: text
+}
+
+.TQTXMemo {
+	padding: 2px;
+	resize: none;
+	font-size: 14px;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	-o-user-select: text;
+	user-select: text
+}
+
+.TQTXComboBox {
+	padding: 2px;
+	resize: none;
+	-webkit-user-select: auto;
+	-moz-user-select: auto;
+	-ms-user-select: auto;
+	-o-user-select: auto;
+	user-select: auto
+}
+
+.TQTXPanel {
+	padding: 2px;
+	outline-style: solid;
+	outline-width: 1px;
+	outline-color: #EFEBE7;
+	outline-offset: -4px
+}
+
+.TQTXImage {
+	padding: 0 !important;
+}
+
+.TQTXLabel {
+	padding: 0 !important;
+}
+
+.TQTXGroupBox {
+	padding: 2px;
+	font-family: "Ubuntu", verdana, Helvetica;
+	font-name: "Ubuntu";
+	font-size: 14px
+}
+
+.TQTXListBox {
+	padding: 2px;
+	margin: 0;
+	background-color: #FFF;
+	font-family: "Ubuntu", verdana, Helvetica;
+	font-name: "Ubuntu";
+	font-size: 14px
+}
+
+.QTXListBox {
+	padding: 2px;
+	font-family: "Ubuntu", verdana, Helvetica;
+	font-name: "Ubuntu";
+	font-size: 18px;
+	font-weight: bold
+}
+
+.TQTXListBoxItem {
+	padding: 2px;
+	color: #000
+}
+
+.TQTXListBoxItem:active {
+	color: rgba(rgba(17, 17, 122, .7)) !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2B5897), color-stop(100, #5B88C7));
+	background-image: -webkit-linear-gradient(top, #2B5897 0%, #5B88C7 100%);
+	background-image: -moz-linear-gradient(top, #2B5897 0%, #5B88C7 100%);
+	background-image: -ms-linear-gradient(top, #2B5897 0%, #5B88C7 100%);
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B5897', endColorstr='#5B88C7', GradientType=0);
+	background-image: linear-gradient(to bottom, #2B5897 0%, #5B88C7 100%)
+}
+
+.TQTXButton {
+	padding: 2px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #494949;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 1)
+}
+
+.TQTXButton:active:enabled {
+	padding: 2px;
+	color: #494949;
+	text-shadow: -1px -1px 1px rgba(255, 255, 255, 1)
+}
+
+.TQTXDialogButton {
+	min-width: 80px;
+	min-height: 32px;
+	margin: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #494949;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, .8)
+}
+
+.TQTXDialogButton:active:enabled {
+	color: #494949;
+	text-shadow: -1px -1px 1px rgba(255, 255, 255, .8)
+}
+
+.TQTXDialogButton>* {
+	font-family: inherit !important;
+	font-name: inherit !important;
+	font-size: inherit !important
+}
+
+.TQTXDialog {
+	padding: 0;
+	border-radius: 8px;
+	z-index: 1000;
+	box-shadow: 0 8px 19px rgba(0, 0, 0, .9)
+}
+
+.TQTXToolButton {
+	padding: 2px;
+	color: #FFF
+}
+
+.TQTXToolbar {
+	padding: 2px;
+	color: #FFF;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	-webkit-box-shadow: 0 -1px 2px rgba(18, 18, 18, .4);
+	-moz-box-shadow: 0 -1px 2px rgba(18, 18, 18, .4);
+	-ms-box-shadow: 0 -1px 2px rgba(18, 18, 18, .4);
+	-o-box-shadow: 0 -1px 2px rgba(18, 18, 18, .4);
+	box-shadow: 0 -1px 2px rgba(18, 18, 18, .4)
+}
+
+.TQTXToolbar :first-child {
+	margin-left: 2px !important
+}
+
+.TQTXToolbar > * {
+	margin-right: 4px !important
+}
+
+.TQTXToolbarButton {
+	padding: 2px;
+	color: #FFF;
+	text-shadow: 0 -1px -1px rgba(0, 0, 0, .30)
+}
+
+.TQTXToolbarButton:active {
+	color: #BEBEBE
+}
+
+.TQTXToolbarSeparator {
+	color: #FFF;
+	padding: 2px;
+	margin-left: 2px !important;
+	margin-right 2px !important
+}
+
+.TQTXSwitch {
+	outline: none;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	   -moz-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	    -ms-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	     -o-box-shadow: inset 0 0 10px rgba(18, 18, 18, .9);
+	        box-shadow: inset 0 0 10px rgba(18, 18, 18, .9)
+
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2B5897), color-stop(100, #5B88C7)) !important;
+	background-image: -webkit-linear-gradient(top, #2B5897 0%, #5B88C7 100%) !important;
+	background-image: -moz-linear-gradient(top, #2B5897 0%, #5B88C7 100%) !important;
+	background-image: -ms-linear-gradient(top, #2B5897 0%, #5B88C7 100%) !important;
+	background-image: filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B5897', endColorstr='#5B88C7', GradientType=0) !important;
+	background-image: linear-gradient(to bottom, #2B5897 0%, #5B88C7 100%) !important
+	
+}
+
+.TQTXSwitchCaliper {
+	border: 1px solid #333;
+	background-color: #f8f8f8;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0, rgb(255, 255, 255)), color-stop(1, rgb(240, 240, 240)));
+	background-image: -webkit-repeating-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(240, 240, 240) 100%);
+	background-image: repeating-linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(240, 240, 240) 100%);
+	background-image: -ms-repeating-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(240, 240, 240) 100%);
+	border-radius: 4px;
+	border-top: 2px solid rgba(rgb(0, 0, 0), 1);
+	border-left: 2px solid rgba(rgb(0, 0, 0), 1);
+	border-bottom: 2px solid rgba(rgb(0, 0, 0), 1);
+	border-right: 2px solid rgba(rgb(0, 0, 0), 1)
+}
+
+@-webkit-keyframes move_bg_progressmeter {
+	0% {
+		background-position: 50px 50px
+	}
+	100% {
+		background-position: 0 0
+	}
+}
+
+@-moz-keyframes move_bg_progressmeter {
+	0% {
+		background-position: 50px 50px
+	}
+	100% {
+		background-position: 0 0
+	}
+}
+
+@-o-keyframes move_bg_progressmeter {
+	0% {
+		background-position: 50px 50px
+	}
+	100% {
+		background-position: 0 0
+	}
+}
+
+.QTXProgressBar {
+	padding: 2px;
+	-webkit-box-shadow: inset 0 0 10px rgba(rgb(0, 0, 0), .9);
+	-moz-box-shadow: inset 0 0 10px rgba(rgb(0, 0, 0), .9);
+	-o-box-shadow: inset 0 0 10px rgba(rgb(0, 0, 0), .9);
+	box-shadow: inset 0 0 10px rgba(rgb(0, 0, 0), .9)
+}
+
+.QTXProgressMeter {
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, .1);
+	-webkit-touch-callout: none;
+	-webkit-animation: move_bg_progressmeter 3s linear infinite;
+	-moz-animation: move_bg_progressmeter 3s linear infinite;
+	-ms-animation: move_bg_progressmeter 3s linear infinite;
+	-o-animation: move_bg_progressmeter 3s linear infinite;
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	-ms-background-size: 50px 50px;
+	-o-background-size: 50px 50px;
+	background-size: 50px 50px;
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .3)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .3)), color-stop(.75, rgba(255, 255, 255, .3)), color-stop(.75, transparent), to(transparent));
+	background-image: -moz-linear-gradient( -45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient( -45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient( -45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent)
+}
+
+.QTXTabControl {
+	padding: 0;
+	font-size: 12px;
+	font-family: "Ubuntu", verdana, Helvetica;
+	font-name: "Ubuntu";
+	font-size: 14px
+}
+
+.QTXTab {
+	background-color: #FFF
+}
+
+.QTXTabHeaders {
+	margin: 2px;
+	padding: 4px
+}
+
+.QTXTabHeader {
+	font-family: "Ubuntu", verdana, Helvetica;
+	font-name: "Ubuntu";
+	font-size: 14px;
+	color: #ACACAC;
+	margin-right: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	line-height: 30px
+}
+
+.QTXTabHeader:active {
+	border-radius: 4px;
+	border-top: 1px solid rgba(44, 44, 44, .7);
+	border-left: 1px solid rgba(44, 44, 44, .7);
+	border-right: 1px solid rgba(44, 44, 44, .7);
+	border-bottom: 1px solid rgba(44, 44, 44, .7)
+}
+
+.QTXTabHeaderSelected {
+	color: #FFF
+}
