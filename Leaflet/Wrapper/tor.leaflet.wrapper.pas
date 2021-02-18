@@ -802,10 +802,7 @@ type
     constructor Create(options: TLDivIconOptions); overload;
   end;
 
-  TLBrowser = class
-    //Todo: How to not use constructor here?
-    constructor Create();
-
+  TLBrowser = class external
     webkit: Boolean;
     android: Boolean;
     android23: Boolean;
@@ -934,42 +931,9 @@ type
     function mouseEventToLatLng(ev: TLMouseEvent): TLLatLng;
   end;
 
-  var LBrowser: TLBrowser;
+  var LBrowser external "L.Browser": TLBrowser;
 
 implementation
-
-constructor TLBrowser.Create();
-begin
-  asm
-    @Self.webkit = L.Browser.webkit;
-    @Self.android = L.Browser.android;
-    @Self.android23 = L.Browser.android23;
-    @Self.androidStock = L.Browser.androidStock;
-    @Self.opera = L.Browser.opera;
-    @Self.chrome = L.Browser.chrome;
-    @Self.gecko = L.Browser.gecko;
-    @Self.safari = L.Browser.safari;
-    @Self.opera12 = L.Browser.opera12;
-    @Self.win = L.Browser.win;
-    @Self.ie3d = L.Browser.ie3d;
-    @Self.webkit3d = L.Browser.webkit3d;
-    @Self.gecko3d = L.Browser.gecko3d;
-    @Self.any3d = L.Browser.any3d;
-    @Self.mobile = L.Browser.mobile;
-    @Self.mobileWebkit = L.Browser.mobileWebkit;
-    @Self.mobileWebkit3d = L.Browser.mobileWebkit3d;
-    @Self.msPointer = L.Browser.msPointer;
-    @Self.pointer = L.Browser.pointer;
-    @Self.touch = L.Browser.touch;
-    @Self.mobileOpera = L.Browser.mobileOpera;
-    @Self.mobileGecko = L.Browser.mobileGecko;
-    @Self.retina = L.Browser.retina;
-    @Self.passiveEvents = L.Browser.passiveEvents;
-    @Self.canvas = L.Browser.canvas;
-    @Self.svg = L.Browser.svg;
-    @Self.vml = L.Browser.vml;
-  end;
-end;
 
 //TQTXLeafletMap
 
@@ -980,12 +944,9 @@ begin
     Widget.WhenReady(procedure(Widget: TQTXWidget)
     var elId: String;
     begin
-
-      elId := Self.Attributes.AttributeRead('id');
-
-      //Todo: Not use TQTXDispatch
-      TQTXDispatch.Execute(procedure ()
+      TQTXDispatch.Execute(procedure()
       begin
+        elId := Self.Attributes.AttributeRead('id');
         Widget.Style.width := '100%';
         Widget.Style.height := '200px';
 
@@ -993,8 +954,7 @@ begin
 
         if assigned(CB) then
           CB(self);
-      end,10);
-
+      end, 50);
     end);
   end);
 end;
@@ -1362,6 +1322,5 @@ begin
 end;
 
 initialization
-  LBrowser := TLBrowser.Create();
 
 end.
